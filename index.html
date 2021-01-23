@@ -1,0 +1,140 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Create Account</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+
+    <!-- all css here -->
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="fan_register">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-lg-7 col-12">
+                    <div class="account_tab text-center">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">sign in</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">sign up</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content mt-30" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="sign_in text-center">
+                                <form action="">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <input type="email" placeholder="email address" class="form-control">
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <input type="text" placeholder="password" class="form-control">
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="button text-center mt-20">
+                                                <a href="#" class="btn">login</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <div class="sign_up">
+                                <form action="">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <input type="text" placeholder="first name" class="form-control">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <input type="text" placeholder="last name" class="form-control">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <input type="text" placeholder="user name" class="form-control">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <input type="email" placeholder="email address" class="form-control">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <select name="" id="" class="form-control">
+                                                <option value="">male</option>
+                                                <option value="">female</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <select name="" id="" class="form-control">
+                                                <option value="">united states of america</option>
+                                                <option value="">united kingdom</option>
+                                                <option value="">argentina</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <input type="text" placeholder="password" class="form-control">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <input type="text" placeholder="confirm password" class="form-control">
+                                        </div>
+                                        <div class="col-sm-12 text-center">
+                                            <label for="">profile picture (optional)</label>
+                                            <div class="upload">
+                                                <input type="file" id="file" class="file">
+                                                <span id="filename"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="button text-center mt-20">
+                                                <a href="#" class="btn">create your account</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        const sobi = document.getElementById('file')
+        sobi.addEventListener('change', () => {
+            let filename = document.getElementById('filename')
+            filename.innerText = sobi.value
+        })
+
+    </script>
+
+    <!-- JS here -->
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/ajax-form.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
