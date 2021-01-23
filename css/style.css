@@ -86,13 +86,21 @@ a:focus,
     margin: 50px 0;
     overflow-x: hidden;
 }
+
+.form {
+    padding: 30px 45px;
+    background-color: #f2f7f8;
+    box-shadow: 0px 0px 136px 0px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+}
+
 .nav-tabs {
     border: 0;
     display: inline-flex;
 }
 
 .nav-tabs .nav-link {
-    color: #000;
+    color: #202030;
     border: 0;
     text-transform: capitalize;
     font-size: 20px;
@@ -102,8 +110,9 @@ a:focus,
 }
 
 .nav-tabs .nav-link.active {
-    color: #7816bf;
+    color: #7c5ebf;
     position: relative;
+    background: none;
 }
 
 .nav-tabs .nav-link.active:after {
@@ -113,16 +122,15 @@ a:focus,
     right: 0;
     bottom: 0;
     height: 2px;
-    background: #7816bf;
+    background: #7c5ebf;
 }
 
 .sign_in form .form-control {
-    width: 70%;
     margin: 0 auto 20px;
 }
 
 form .form-control {
-    color: #878991;
+    color: #b8b8b8;
     font-size: 14px;
     padding: 10px 10px;
     margin-bottom: 20px;
@@ -131,10 +139,11 @@ form .form-control {
 }
 
 form select.form-control {
-    background: #eaeaea;
-    /*    -webkit-appearance: none;*/
+    color: #625c55;
     position: relative;
 }
+
+form select.form-control:focus {}
 
 form select.form-control:after {
     content: "\f078";
@@ -152,7 +161,6 @@ form .form-control:focus {
     outline: 0;
     box-shadow: none;
     border-color: #ddd;
-    background: #eaeaea;
 }
 
 label {
@@ -166,7 +174,7 @@ label {
     height: 130px;
     width: 130px;
     border-radius: 50%;
-    background: #dddbdb;
+    background: #e5e5e5;
     background-size: 100% 100%;
     margin: 10px auto 30px;
     position: relative;
@@ -188,7 +196,7 @@ label {
 }
 
 .file {
-       position: absolute;
+    position: absolute;
     bottom: 25px;
     right: -7px;
     outline: none;
@@ -207,7 +215,7 @@ label {
     text-align: center;
     border-radius: 50%;
     color: #ffff;
-    background: #7816bf;
+    background: #7c5ebf;
     display: inline-block;
     -webkit-user-select: none;
     z-index: 999;
@@ -225,13 +233,115 @@ label {
     bottom: -45px;
     left: 50%;
     transform: translate(-50%);
-    }
+}
 
-.button .btn {
+.button p a {
+    color: #2c2c2c;
+    padding-top: 10px;
+    text-transform: capitalize;
+}
+
+.button p a:hover {
+    color: #7c5ebf;
+}
+
+.btn {
     padding: 10px 25px;
     text-transform: uppercase;
     font-size: 14px;
     color: #fff;
-    background: #7816bf;
-    border-right: 0;
+    background: #7c5ebf;
+    border: 1px solid #7c5ebf;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -os-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+
 }
+
+.btn:hover {
+    background: #fff;
+    color: #7c5ebf;
+}
+
+.fan_benefits h3 {
+    font-size: 24px;
+    text-transform: capitalize;
+    padding-bottom: 20px;
+}
+
+.fan_benefits ul li {
+    color: #6d6f6f;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    position: relative;
+    font-family: 'Rubik', sans-serif;
+}
+
+.fan_benefits ul li:after {
+    position: absolute;
+    content: '';
+    left: 30px;
+    top: 10px;
+    height: 5px;
+    width: 5px;
+    background: #7c5ebf;
+    border-radius: 50%;
+}
+
+.fan_benefits p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+}
+
+.fan_benefits a {
+    color: #7c5ebf;
+}
+
+@media only screen and (max-width:500px) {
+    .container {
+        width: 100%;
+    }
+
+    .form {
+        padding: 30px 20px;
+    }
+
+    .fan_benefits h3 {
+        font-size: 22px;
+        padding-bottom: 15px;
+    }
+
+    .fan_benefits ul li {
+        font-size: 14px;
+        padding-left: 30px;
+    }
+
+    .fan_benefits ul li:after {
+        left: 15px;
+        top: 7px;
+    }
+    .fan_benefits p {
+        padding-top: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*================*/
